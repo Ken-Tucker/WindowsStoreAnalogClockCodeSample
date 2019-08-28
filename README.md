@@ -1,7 +1,7 @@
 # Introduction
 Create a Analog Clock in a windows store application
 
-#Building the Sample
+# Building the Sample
 You can build this application with Visual Studio 2013 on a computer using Windows 8.1 as the operating system
 
 # Description
@@ -13,7 +13,7 @@ Additional work would need to be done to be able to submit the app to the store.
  
 
 Sample updated to work with windows 8.1 and vs 2013 on 12/24/2013. Also included a Visual Basic version
-
+# Visual Basic
 ``` Visual Basic
    Dim timer As New DispatcherTimer 
  
@@ -35,8 +35,8 @@ Sample updated to work with windows 8.1 and vs 2013 on 12/24/2013. Also included
         minuteHand.Angle = DateTime.Now.Minute * 6 
         hourHand.Angle = (DateTime.Now.Hour * 30) + (DateTime.Now.Minute * 0.5) 
     End Sub
-    
-    
+```    
+# C#    
     
 ``` c#
         DispatcherTimer timer = new DispatcherTimer(); 
@@ -55,8 +55,8 @@ Sample updated to work with windows 8.1 and vs 2013 on 12/24/2013. Also included
             minuteHand.Angle = DateTime.Now.Minute * 6; 
             hourHand.Angle = (DateTime.Now.Hour * 30) + (DateTime.Now.Minute * 0.5); 
         }
-        
-        
+```        
+# XAML        
         
 ``` XAML
        <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}"> 
@@ -94,3 +94,4 @@ Sample updated to work with windows 8.1 and vs 2013 on 12/24/2013. Also included
          
     </Grid> 
     </Grid>
+```
