@@ -15,7 +15,7 @@ Additional work would need to be done to be able to submit the app to the store.
 Sample updated to work with windows 8.1 and vs 2013 on 12/24/2013. Also included a Visual Basic version
 
 '''Visual Basic
-  Dim timer As New DispatcherTimer 
+   Dim timer As New DispatcherTimer 
  
  
     Public Sub New() 
@@ -35,8 +35,11 @@ Sample updated to work with windows 8.1 and vs 2013 on 12/24/2013. Also included
         minuteHand.Angle = DateTime.Now.Minute * 6 
         hourHand.Angle = (DateTime.Now.Hour * 30) + (DateTime.Now.Minute * 0.5) 
     End Sub
+    
+    
+    
     '''c#
-            DispatcherTimer timer = new DispatcherTimer(); 
+        DispatcherTimer timer = new DispatcherTimer(); 
  
         public MainPage() 
         { 
@@ -52,6 +55,9 @@ Sample updated to work with windows 8.1 and vs 2013 on 12/24/2013. Also included
             minuteHand.Angle = DateTime.Now.Minute * 6; 
             hourHand.Angle = (DateTime.Now.Hour * 30) + (DateTime.Now.Minute * 0.5); 
         }
+        
+        
+        
     '''XAML
        <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}"> 
         <Grid Width="300" Height="300"> 
