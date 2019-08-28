@@ -1,10 +1,10 @@
-#Introduction
+# Introduction
 Create a Analog Clock in a windows store application
 
 #Building the Sample
 You can build this application with Visual Studio 2013 on a computer using Windows 8.1 as the operating system
 
-#Description
+# Description
 
 This sample uses xaml and c# to create an analog clock in a windows store application.  Xaml allows you to vary the angle of lines when drawn on the screen. I used an ellipse as the background of the clock. We will draw 3 lines for the hour, seconds, and minute hand on an analog clock.  A rotate transform turns a line into the second, minute and hour hand.  The transform will draw the line from the center of a circle at the angle needed to represent the time. For seconds and minutes multiply the value by 6 to get the angle for the clocks hand transform.  For hours multiply the hour by 30 to get the angle needed for the hour hand transform.   I use a dispatch timer to update angle of the hands based on the current time.  The dispatch timer will fire an event every second which we use to update the angle of the clocks hand.   The clock could be improved by using a clock image instead of an ellipse.  
 
@@ -14,7 +14,7 @@ Additional work would need to be done to be able to submit the app to the store.
 
 Sample updated to work with windows 8.1 and vs 2013 on 12/24/2013. Also included a Visual Basic version
 
-'''Visual Basic
+``` Visual Basic
    Dim timer As New DispatcherTimer 
  
  
@@ -38,7 +38,7 @@ Sample updated to work with windows 8.1 and vs 2013 on 12/24/2013. Also included
     
     
     
-    '''c#
+``` c#
         DispatcherTimer timer = new DispatcherTimer(); 
  
         public MainPage() 
@@ -58,7 +58,7 @@ Sample updated to work with windows 8.1 and vs 2013 on 12/24/2013. Also included
         
         
         
-    '''XAML
+``` XAML
        <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}"> 
         <Grid Width="300" Height="300"> 
             <Ellipse Width="300" Height="300" Fill="Blue"></Ellipse> 
